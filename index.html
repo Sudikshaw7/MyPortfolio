@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudiksha Wandre - Pixel Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top pixel-navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="images/navgif.gif" alt="Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="toggleSeason" class="btn border-0 p-0">
+                            <span id="seasonIcon" class="season-icon">☀️</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+ <section class="pixel-hero">
+    <div class="hero-content animate-fade-in container">
+        <div class="text-center">
+            <img src="images/profile.png" alt="Sudiksha Wandre" class="profile-img">
+        </div>
+
+        <div class="pixel-text profile-right">
+            <h1>Sudiksha Wandre</h1>
+            <p>Fullstack Developer | Learner | Designer</p>
+            <p>
+                I build responsive, user-focused web applications with a strong emphasis on clarity, performance, and clean design.<br><br>
+                My experience includes working with React, Node.js, Express, and MySQL.<br><br>
+                Currently learning and improving my full-stack skills by building real-world projects.
+            </p>
+            <a href="Sudiksha_Wandre_CV.pdf" download class="btn pixel-btn">Download Resume</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About -->
+    <section id="about" class="container pixel-section">
+        <h2 class="text-center pixel-text mb-5">About Me</h2>
+        <p class="text-center pixel-text mb-5">I'm a dedicated full-stack developer passionate about crafting innovative and user-friendly web experiences.</p>
+        <div class="timeline">
+            <div class="timeline-item pixel-text">
+                <strong>Full Stack Development Training</strong><br>LivetechIndia<br>2025 – Present
+            </div>
+            <div class="timeline-item pixel-text">
+                <strong>Frontend Designer</strong><br>Chenoa Information Services (acquired by 3Pillar Global)<br>2022 – 2025
+            </div>
+            <div class="timeline-item pixel-text">
+                <strong>B.E. Computer Science Engineering</strong><br>Graduated 2022
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="https://github.com/Sudikshaw7" target="_blank" class="btn pixel-btn mx-2">GitHub</a>
+            <a href="https://www.linkedin.com/in/sudikshawandre/" target="_blank" class="btn pixel-btn mx-2">LinkedIn</a>
+            <a href="mailto:connectwsudiksha@gmail.com" class="btn pixel-btn mx-2">Email</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container pixel-section">
+        <h2 class="text-center pixel-text mb-5">Skills</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" class="skill-logo">
+                    <div class="card-body pixel-text">Web Design</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="skill-logo">
+                    <div class="card-body pixel-text">ReactJS</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="skill-logo">
+                    <div class="card-body pixel-text">Figma</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" class="skill-logo">
+                    <div class="card-body pixel-text">NodeJS</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" class="skill-logo">
+                    <div class="card-body pixel-text">MySQL</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up text-center">
+                    <img src="https://expressjs.com/images/express-logo.svg" alt="Express" class="skill-logo">
+                    <div class="card-body pixel-text">Express</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container pixel-section">
+        <h2 class="text-center pixel-text mb-5">Projects</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up">
+                    <h5>MinuteMeal - Food Delivery App</h5>
+                    <p>A full-featured food delivery platform built with HTML, CSS, and JavaScript. Browse restaurants, view menus, add to cart, and place orders.</p>
+                    <div class="project-links mt-auto">
+                        <a href="https://github.com/Sudikshaw7/MinuteMeal" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up">
+                    <h5>To Do App - Task Manager</h5>
+                    <p>Clean task manager with add/edit/delete, mark complete, and local storage persistence.</p>
+                    <div class="project-links mt-auto">
+                        <a href="https://github.com/Sudikshaw7/To-do-App" target="_blank">GitHub</a>
+                        <a href="https://tubular-sunshine-931f61.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card animate-slide-up">
+                    <h5>Stratton Tea Mart - E-Commerce Site</h5>
+                    <p>Online tea store with product catalog, filtering, shopping cart, and responsive design.</p>
+                    <div class="project-links mt-auto">
+                        <a href="https://github.com/Sudikshaw7/Stratton-teamart" target="_blank">GitHub</a>
+                        <a href="https://thriving-dodol-1fb286.netlify.app/#home" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="pixel-footer">
+        <div class="container">
+            <h2 class="text-center pixel-text mb-5">Contact Me</h2>
+            <form id="contactForm" class="mx-auto" style="max-width: 700px;">
+                <div class="mb-3">
+                    <label class="form-label pixel-text">Name</label>
+                    <input type="text" class="form-control pixel-input" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label pixel-text">Email</label>
+                    <input type="email" class="form-control pixel-input" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label pixel-text">Message</label>
+                    <textarea class="form-control pixel-input" id="message" rows="6" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn pixel-btn">Send Message</button>
+                </div>
+                <div id="formMessage" class="text-center mt-3"></div>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Seasonal Effects -->
+    <div id="seasonEffects"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

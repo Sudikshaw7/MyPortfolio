@@ -1,9 +1,5 @@
-// EmailJS Init
 emailjs.init({ publicKey: "iKcVo2WJy4phCx_hI" });
 
-// --------------------
-// SEASON LOGIC
-// --------------------
 function getSeasonFromDate() {
     const month = new Date().getMonth();
     if (month === 11 || month === 0 || month === 1) return 'winter';
@@ -14,13 +10,12 @@ function getSeasonFromDate() {
 const seasonData = {
     summer: { icon: '☀️', bg: 'summer-theme' },
     winter: { icon: '❄️', bg: 'winter-theme' },
-    rainy: { icon: '🌧️', bg: 'rainy-theme' }
+    rainy:  { icon: '🌧️', bg: 'rainy-theme' }
 };
 
 const seasons = ['summer', 'winter', 'rainy'];
 let currentIndex = seasons.indexOf(getSeasonFromDate());
 
-// Apply initial season
 document.body.className = seasonData[seasons[currentIndex]].bg;
 document.getElementById('seasonIcon').textContent =
     seasonData[seasons[currentIndex]].icon;
@@ -30,7 +25,6 @@ const effectsContainer = document.getElementById('seasonEffects');
 function createSeasonEffects(season) {
     effectsContainer.innerHTML = '';
 
-    // ❄️ WINTER
     if (season === 'winter') {
         for (let i = 0; i < 80; i++) {
             const flake = document.createElement('div');
@@ -50,7 +44,6 @@ function createSeasonEffects(season) {
         }
     }
 
-    // 🌧️ RAINY
     else if (season === 'rainy') {
         for (let i = 0; i < 120; i++) {
             const drop = document.createElement('div');
@@ -71,7 +64,6 @@ function createSeasonEffects(season) {
         }
     }
 
-    // ☀️ SUMMER
     else if (season === 'summer') {
         const sun = document.createElement('div');
         sun.textContent = '☀️';
@@ -108,9 +100,7 @@ function createSeasonEffects(season) {
 
 createSeasonEffects(seasons[currentIndex]);
 
-// --------------------
-// TOGGLE SEASON
-// --------------------
+
 document.getElementById('toggleSeason').addEventListener('click', () => {
     document.body.className = '';
     currentIndex = (currentIndex + 1) % seasons.length;

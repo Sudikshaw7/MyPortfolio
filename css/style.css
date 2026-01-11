@@ -300,8 +300,6 @@ body {
     pointer-events: none;
     overflow: hidden;
 }
-
-/* Bring all real content above effects */
 .pixel-navbar,
 .pixel-hero,
 .pixel-section,
